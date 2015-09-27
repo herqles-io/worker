@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='hq-worker',
-    version='2.0.0',
+    version='2.0.0.dev1',
     url='https://github.com/herqles-io/hq-worker',
     include_package_data=True,
     license='',
@@ -12,13 +12,10 @@ setup(
     package_dir={'': 'src'},
     packages=find_packages('src'),
     install_requires=[
-        'hq-lib==1.0.0',
+        'hq-lib==2.0.0.dev1',
         'pika==0.9.14',
         'pyyaml==3.11',
-        'schematics==1.0.4'
-    ],
-    dependency_links=[
-        'git+https://github.com/herqles-io/hq-lib.git@2.0-dev#egg=hq-lib-2.0.0-dev',
+        'schematics==1.1.0'
     ],
     scripts=['bin/hq-worker']
 )
