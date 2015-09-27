@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='hq-worker',
-    version='1.0.0',
-    url='',
+    version='2.0.0',
+    url='https://github.com/herqles-io/hq-worker',
     include_package_data=True,
     license='',
     author='Ryan Belgrave',
@@ -18,7 +18,7 @@ setup(
         'schematics==1.0.4'
     ],
     dependency_links=[
-        'git+https://github.com/herqles-io/hq-lib.git#egg=hq-lib-1.0.0',
+        'git+https://github.com/herqles-io/hq-lib.git@2.0-dev#egg=hq-lib-2.0.0',
     ],
     scripts=['bin/hq-worker']
 )
